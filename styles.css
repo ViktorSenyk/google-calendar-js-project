@@ -75,7 +75,7 @@
   height: 15px;
   font-size: 15px;
   margin-right: 5px;
-  background: url(../styles/images/arrow-left-3099.svg) center no-repeat;
+  background: url(./styles/images/arrow-left-3099.svg) center no-repeat;
   background-size: contain;
 }
 .navigation__nav-icon:nth-child(3) {
