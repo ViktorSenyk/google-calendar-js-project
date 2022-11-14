@@ -2,7 +2,7 @@ let storage = {
   // используется для удаления события
   eventIdToDelete: null,
   // хранит дату понедельника той отображаемой недели
-  displayedWeekStart: null,
+  displayedWeekStart: new Date(),
   // хранит массив всех событий
   events: [],
   // это все данные, которые вам нужно хранить для работы приложения
@@ -12,9 +12,7 @@ export const setItem = (key, value) => {
   // ф-ция должна устанавливать значения в объект storage
 };
 
-export const getItem = (key) => {
-  // ф-ция должна возвращать по ключу значения из объекта storage
-};
+export const getItem = (key) => storage[key];
 
 // пример объекта события
 const eventExample = {

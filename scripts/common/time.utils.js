@@ -45,6 +45,16 @@ const monthsNames = [
   'Dec',
 ];
 
+export const daysNames = [
+  'Sun',
+  'Mon',
+  'Tue',
+  'Wed',
+  'Thu',
+  'Fri',
+  'Sat',
+];
+
 // вернет месяц и год для недели, в которой находится переданный день
 export const getDisplayedMonth = (date) => {
   const weekStart = getStartOfWeek(date);

@@ -1,1 +1,18 @@
 // стили навигации
+.navigation {
+    display: flex;
+    align-items: center;
+  &__today-btn {
+    width: 90px;
+    height: 40px;
+    border: 2px solid rgba(128, 128, 128, 0.285);
+    border-radius: 5px;
+    background-color: white;
+    margin-right: 30px;
+  }
+  &__nav-icon {
+    font-size: 15px;
+    margin-right: 5px;
+    color: rgb(128, 128, 128);
+  }
+}
