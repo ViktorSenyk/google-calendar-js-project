@@ -79,7 +79,7 @@
   background-size: contain;
 }
 .navigation__nav-icon:nth-child(3) {
-  background: url(../styles/images/arrow-right-3098.svg) center no-repeat;
+  background: url(./styles/images/arrow-right-3098.svg) center no-repeat;
   background-size: contain;
 }
 
