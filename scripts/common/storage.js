@@ -9,7 +9,10 @@ let storage = {
 };
 
 export const setItem = (key, value) => {
-  // ф-ция должна устанавливать значения в объект storage
+  if (key === 'displayedWeekStart') {
+    // storage.displayedWeekStart = new Date(storage.displayedWeekStart.getTime() + 6.048e8);
+    console.log('Why ?');
+  }
 };
 
 export const getItem = (key) => storage[key];

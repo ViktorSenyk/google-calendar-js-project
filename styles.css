@@ -1,7 +1,5 @@
 .page {
   width: 903px;
-  height: 100vh;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -107,7 +105,8 @@
 }
 
 .calendar {
-  margin-left: 60px;
+  padding-bottom: 50px;
+  margin-left: 48px;
 }
 .calendar__header {
   display: flex;
@@ -144,12 +143,32 @@
   color: white;
 }
 
+.calendar__time-scale {
+  position: absolute;
+  top: 190px;
+  left: 0;
+  padding-bottom: 60px;
+}
+
+.time-slot {
+  position: relative;
+  width: 48px;
+  height: 60px;
+}
+.time-slot__time {
+  position: absolute;
+  right: 8px;
+  bottom: -8px;
+  font-size: 12px;
+  color: rgb(128, 128, 128);
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   font-size: 18px;
   font-family: "Roboto", sans-serif;
 }

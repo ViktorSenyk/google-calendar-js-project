@@ -11,11 +11,19 @@ const displayedMonthElem = document.querySelector(
 function renderCurrentMonth() {
   // отрисовать месяц, к которому относиться текущая неделя (getDisplayedMonth)
   // вставить в .navigation__displayed-month
+  displayedMonthElem.textContent = getDisplayedMonth(
+    getItem('displayedWeekStart')
+  );
 }
 
 const onChangeWeek = (event) => {
   // при переключении недели обновите displayedWeekStart в storage
   // и перерисуйте все необходимые элементы страницы (renderHeader, renderWeek, renderCurrentMonth)
+  if (
+    event.target.closest('.navigation__nav-icon').dataset.direction === 'next'
+  ) {
+    setItem('displayedWeekStart', 6.048e8);
+  }
 };
 
 export const initNavigation = () => {
