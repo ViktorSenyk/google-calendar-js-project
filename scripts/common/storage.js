@@ -10,12 +10,16 @@ let storage = {
 
 export const setItem = (key, value) => {
   if (key === 'displayedWeekStart') {
-    // storage.displayedWeekStart = new Date(storage.displayedWeekStart.getTime() + 6.048e8);
-    console.log('Why ?');
+    storage.displayedWeekStart = new Date(
+      storage.displayedWeekStart.getTime() + value
+    );
+  } else if (key === 'displayedWeekStartReset') {
+    storage.displayedWeekStart = new Date();
   }
 };
 
 export const getItem = (key) => storage[key];
+
 
 // пример объекта события
 const eventExample = {

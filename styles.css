@@ -66,14 +66,21 @@
   width: 90px;
   height: 40px;
   border: 2px solid rgba(128, 128, 128, 0.285);
-  border-radius: 5px;
   background-color: white;
   margin-right: 30px;
 }
 .navigation__nav-icon {
+  display: block;
+  width: 15px;
+  height: 15px;
   font-size: 15px;
   margin-right: 5px;
-  color: rgb(128, 128, 128);
+  background: url(../styles/images/arrow-left-3099.svg) center no-repeat;
+  background-size: contain;
+}
+.navigation__nav-icon:nth-child(3) {
+  background: url(../styles/images/arrow-right-3098.svg) center no-repeat;
+  background-size: contain;
 }
 
 .header {

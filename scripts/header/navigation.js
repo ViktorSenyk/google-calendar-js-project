@@ -19,10 +19,18 @@ function renderCurrentMonth() {
 const onChangeWeek = (event) => {
   // при переключении недели обновите displayedWeekStart в storage
   // и перерисуйте все необходимые элементы страницы (renderHeader, renderWeek, renderCurrentMonth)
-  if (
-    event.target.closest('.navigation__nav-icon').dataset.direction === 'next'
-  ) {
+  if (event.target.dataset.direction === 'next') {
     setItem('displayedWeekStart', 6.048e8);
+    renderCurrentMonth();
+    renderHeader();
+  } else if (event.target.dataset.direction === 'prev') {
+    setItem('displayedWeekStart', -6.048e8);
+    renderCurrentMonth();
+    renderHeader();
+  } else if (event.target.dataset.direction === 'today') {
+    setItem('displayedWeekStartReset');
+    renderCurrentMonth();
+    renderHeader();
   }
 };
 
