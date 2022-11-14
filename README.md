@@ -1,6 +1,6 @@
 # Google calendar (JS project)
 
-### [Site link](https://viktorsenyk.github.io/startup-lp/)
+### [Site link](https://viktorsenyk.github.io/google-calendar-js-project/)
 
 
 ### The tech stack is:

@@ -11,9 +11,12 @@ const generateDay = () => {
   weekBlockElem.innerHTML = createNumbersArray(1, 7)
     .map(
       (day) =>
-        `<div class="calendar__day">${createNumbersArray(1, 24).map(
-          (min) => `<div class="calendar__time-slot" data-time="${min}"></div>`
-        ).join('')}</div>`
+        `<div class="calendar__day">${createNumbersArray(0, 23)
+          .map(
+            (hour) =>
+              `<div class="calendar__time-slot" data-time="${hour}"></div>`
+          )
+          .join('')}</div>`
     )
     .join('');
 };
